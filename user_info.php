@@ -48,7 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Xử lý cập nhật mật khẩu
     } elseif (isset($_FILES['new_image']) && isset($_FILES['new_image']['tmp_name']) && $_FILES['new_image']['tmp_name'] != '') {
         // Xử lý tải lên hình ảnh mới
-        $target_dir = "php/images/";
+        $target_dir = "";
         $target_file = $target_dir . basename($_FILES["new_image"]["name"]);
         $uploadOk = 1;
         $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
