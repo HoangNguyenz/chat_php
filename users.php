@@ -25,7 +25,7 @@ include_once "header.php";
                 ?>
                 <div class="content">
                     <a href="user_info.php?user_id=<?php echo $row['unique_id']; ?>">
-                        <img src="<?php echo $row['img']; ?>" alt="">
+                        <img src="php/images<?php echo $row['img']; ?>" alt="">
                         <div class="details">
                             <span><?php echo $row['fname'] . " " . $row['lname'] ?></span>
                             <p><?php echo $row['status'] ?></p>
